@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrina Del Greco</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-button hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">skills</a></li>
+                    <li><a href="#">recommendations</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/hero.svg" alt="hero graphic" class="hero">
+            <h1>Corrina Del Greco</h1>
+            <p class="subhead">Passionate about software developement, she loves the challenge and satisfaction she gets from solving problems.</p>
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="colored-container-1">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="icon 1">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="icon 2">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="icon 3">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="colored-container-2">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/collins-aerospace-avatar.svg" alt="reccomendation picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- Jake Marzen, Scrum Master</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/rainmaker-thinking-avatar.svg" alt="reccomendation picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- Bruce Tulgan, CEO</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Let's chat!</h2>
+        <a href="#" class="cta">Contact</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <!-- <a href="#">
+                    <img src="images/logo.svg" class="logo" alt="logo">
+                </a> -->
+                <p class="address">Palm Coast, FL<br>32137 USA</p>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/corrinadelgreco">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/corrinadelgreco/">LinkedIn</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+</html>
